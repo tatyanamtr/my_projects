@@ -50,5 +50,6 @@ public class RansomNote {
 
     public static void main(String[] args) {
         checkMagazine(new String[]{"two", "times", "three", "is", "not", "four"}, new String[]{"two", "times", "two", "is", "four"});
+        checkMagazine(new String[]{"give", "me", "one", "grand", "today", "night"}, new String[]{"give", "one", "grand", "today"});
     }
 }
