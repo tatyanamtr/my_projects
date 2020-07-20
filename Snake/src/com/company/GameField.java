@@ -19,9 +19,7 @@ public class GameField extends JPanel implements ActionListener {
     private int [] x = new int[all_dots]; //змея сама
     private int [] y = new int[all_dots];
     private int dots; //длина змейки
-    private Timer timer1;
-    private static  long last_frame_time;
-    private Timer timer2;
+    private Timer timer;
     private int speed = 250;
     private static int score;
     private boolean left = false;
@@ -29,7 +27,6 @@ public class GameField extends JPanel implements ActionListener {
     private boolean up = false;
     private boolean down = false;
     private boolean inGame = true;
-    private JButton restartButton;
 
 
     public GameField(){
@@ -48,17 +45,14 @@ public class GameField extends JPanel implements ActionListener {
             y[i] = 48;
         }
 
-       timer1 = new Timer(speed,this);
-       //if(score == 0){
-           timer1.start();
-       /*} else {
+       timer = new Timer(speed,this);
+           timer.start();
 
-       }*/
         createApple();
     }
 
     public void createApple(){
-        appleX = new Random().nextInt(19)*dot_size;//столько позиций может быть на поле
+        appleX = new Random().nextInt(19)*dot_size; //столько позиций может быть на поле
         appleY = new Random().nextInt(19)*dot_size;
         for (int i = dots; i > 0 ; i--) {
             if (appleX == x[i] && appleY == y[i]) {
@@ -119,26 +113,13 @@ public class GameField extends JPanel implements ActionListener {
         }
 
     }
-   /* public void speeding(){
-
-        timer2 = new Timer (speed, this);
-        speed -= score;
-        timer2.start();
-    }*/
 
     public void checkApple(){
         if (x[0] == appleX && y[0] == appleY){
             dots++;
             score ++;
-            //speeding();
 
             createApple();
-           /* last_frame_time = System.nanoTime();
-            long current_time = System.nanoTime();
-            float delta_time = (current_time - last_frame_time) * 0.000000001f;
-            last_frame_time = current_time;
-            timer2 = new Timer(delta_time, this);
-            timer2.start();*/
         }
     }
 
@@ -192,24 +173,4 @@ public class GameField extends JPanel implements ActionListener {
         }
     }
 
-    /*private void restart() {
-        String buttonText = "try again";
-        restartButton = new JButton(buttonText);
-
-
-        setLayout(null);
-        restartButton.setBounds(130, 190, 190, 210);
-        add(restartButton);
-
-        restartButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                restart();
-            }
-        });
-
-        setButtonVisibility(false);
-    }
-
-    private void setButtonVisibility(boolean b) {
-    }*/
 }
