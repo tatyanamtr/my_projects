@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87b52fca-17ae-42f2-93cc-41aaa4bbd594" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GameField.java" afterDir="false" />
-    </list>
+    <list default="true" id="87b52fca-17ae-42f2-93cc-41aaa4bbd594" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,10 +109,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="880" y="101" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592286832980" />
-    <state x="685" y="146" key="new project wizard" timestamp="1592475461491">
+    <state x="685" y="146" key="new project wizard" timestamp="1595233646155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="685" y="146" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1592475461491" />
+    <state x="685" y="146" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1595233646155" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Snake$Main.ic" NAME="Main Coverage Results" MODIFIED="1592286963755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
